@@ -191,26 +191,6 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-green-50">
-      {/* Navigation */}
-      <nav className="container mx-auto px-6 py-4">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-green-500 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">M</span>
-            </div>
-            <span className="text-xl font-bold text-gray-900">MedBook</span>
-          </div>
-          <div className="hidden md:flex items-center space-x-8">
-            <a href="#features" className="text-gray-600 hover:text-gray-900 transition-colors">Features</a>
-            <a href="#centers" className="text-gray-600 hover:text-gray-900 transition-colors">Centers</a>
-            <a href="#doctors" className="text-gray-600 hover:text-gray-900 transition-colors">Doctors</a>
-            <a href="#how-it-works" className="text-gray-600 hover:text-gray-900 transition-colors">How it Works</a>
-            <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">
-              Get Started
-            </button>
-          </div>
-        </div>
-      </nav>
 
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-20">
@@ -405,9 +385,9 @@ export default function Home() {
                 
                 <div className="flex items-center justify-between">
                   <span className="text-sm text-gray-500">{clinic.reviews} reviews</span>
-                  <button className="bg-gradient-to-r from-blue-600 to-green-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:shadow-lg transition-all duration-300">
+                  <a href={`/organizations/${clinic.id}`} className="bg-gradient-to-r from-blue-600 to-green-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:shadow-lg transition-all duration-300 inline-block">
                     Book Now
-                  </button>
+                  </a>
                 </div>
               </div>
             </motion.div>
@@ -471,10 +451,10 @@ export default function Home() {
                 </div>
               </div>
               
-              <button className="w-full bg-gradient-to-r from-blue-600 to-green-600 text-white py-3 px-4 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 flex items-center justify-center space-x-2">
+              <a href={`/doctors/${doctor.id}`} className="w-full bg-gradient-to-r from-blue-600 to-green-600 text-white py-3 px-4 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 flex items-center justify-center space-x-2">
                 <span>Book Appointment</span>
                 <ArrowRight className="w-4 h-4" />
-              </button>
+              </a>
             </motion.div>
           ))}
         </div>
