@@ -107,7 +107,7 @@ export default function AboutPage() {
   ]
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="bg-gray-50">
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-blue-600 to-green-600 text-white">
         <div className="container mx-auto px-6 py-16">

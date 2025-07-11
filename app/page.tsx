@@ -190,7 +190,7 @@ export default function Home() {
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-green-50">
+    <div className="bg-gradient-to-br from-blue-50 via-white to-green-50">
 
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-20">
@@ -546,27 +546,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
-        <div className="container mx-auto px-6">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="flex items-center space-x-2 mb-4 md:mb-0">
-              <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-green-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">M</span>
-              </div>
-              <span className="text-xl font-bold">MedBook</span>
-            </div>
-            <div className="flex space-x-6 text-sm">
-              <a href="#" className="hover:text-blue-400 transition-colors">Privacy</a>
-              <a href="#" className="hover:text-blue-400 transition-colors">Terms</a>
-              <a href="#" className="hover:text-blue-400 transition-colors">Support</a>
-            </div>
-          </div>
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-            © 2024 MedBook. All rights reserved.
-          </div>
-        </div>
-      </footer>
     </div>
   )
 } 

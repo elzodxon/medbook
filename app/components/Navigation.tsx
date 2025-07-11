@@ -23,6 +23,7 @@ export default function Navigation() {
     { name: 'Centers', href: '/centers' },
     { name: 'Doctors', href: '/doctors' },
     { name: 'Services', href: '/services' },
+    { name: 'AI Assistant', href: '/ai-assistant' },
     { name: 'About', href: '/about' }
   ]
 
